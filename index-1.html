@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gospel Animation — Beyond Imagination | Christian Animation Ministry</title>
+<meta name="description" content="Gospel Animation is a Christian animation ministry from Nigeria bringing Scripture, faith and hope to life through animation, storytelling and music. We are also the team behind Filtbo, a free Bible app.">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="color-scheme" content="dark">
+<!-- When your domain is ready, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> and absolute og:url / og:image addresses. -->
+
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gospel Animation">
+<meta property="og:title" content="Gospel Animation — Beyond Imagination">
+<meta property="og:description" content="A Christian animation ministry bringing Scripture, faith and hope to life through animation, storytelling and music.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gospel Animation anchor logo and tagline Beyond Imagination">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gospel Animation — Beyond Imagination">
+<meta name="twitter:description" content="A Christian animation ministry bringing Scripture, faith and hope to life through animation, storytelling and music.">
+<meta name="twitter:image" content="og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Gospel Animation",
+  "slogan":"Beyond Imagination",
+  "description":"A Christian animation ministry from Nigeria bringing Scripture, faith and hope to life through animation, storytelling and music.",
+  "email":"filtbooffcial@gmail.com",
+  "areaServed":"Worldwide",
+  "sameAs":[
+    "https://youtube.com/@gospelanimationofficial",
+    "https://www.instagram.com/gospelanimation.official",
+    "https://www.tiktok.com/@gospelanimationofficial",
+    "https://www.facebook.com/share/1CZfBeW4cV/",
+    "https://x.com/GospelAMt",
+    "https://whatsapp.com/channel/0029VbDNbVg7oQhZmodLcP3q"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== 1. Tokens ===== */
+:root{
+  --black:#000; --bg:#050505; --charcoal:#0f0f0f; --surface:#141414; --surface-2:#1a1a1a;
+  --line:#262626; --line-2:#333; --white:#fff; --soft:#c9c9c9; --mute:#8d8d8d;
+  --accent:#f2790f; --accent-soft:rgba(242,121,15,.14);
+  --serif:'Cormorant Garamond','Times New Roman',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --radius:18px; --header-h:68px; --maxw:1160px;
+}
+/* ===== 2. Base ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth; scroll-padding-top:calc(var(--header-h) + 8px); -webkit-text-size-adjust:100%; overflow-x:clip;}
+body{margin:0; background:var(--bg); color:var(--white); font-family:var(--sans); font-weight:300; font-size:1rem; line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:clip; min-width:320px;}
+img,svg{max-width:100%; display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{font-family:var(--serif); font-weight:600; line-height:1.1; margin:0; letter-spacing:.005em;}
+p{margin:0;}
+ul{margin:0; padding:0; list-style:none;}
+.wrap{width:100%; max-width:var(--maxw); margin:0 auto; padding:0 max(20px, env(safe-area-inset-left));}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px;}
+.skip{position:absolute; left:-999px; top:8px; background:var(--white); color:var(--black); padding:10px 16px; border-radius:10px; z-index:200; text-decoration:none; font-weight:500;}
+.skip:focus{left:12px;}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
+
+/* ===== 3. Header + navigation ===== */
+.site-header{position:fixed; top:0; left:0; right:0; z-index:100; height:var(--header-h); background:rgba(0,0,0,.7); -webkit-backdrop-filter:blur(16px) saturate(140%); backdrop-filter:blur(16px) saturate(140%); border-bottom:1px solid rgba(255,255,255,.08); transition:background .3s, border-color .3s;}
+.site-header.scrolled{background:rgba(0,0,0,.88); border-bottom-color:var(--line-2);}
+.bar{height:var(--header-h); display:flex; align-items:center; justify-content:space-between; gap:16px;}
+.brand{display:flex; align-items:center; gap:12px; text-decoration:none; min-width:0;}
+.brand img{width:38px; height:38px; border-radius:10px; flex:none;}
+.brand span{font-family:var(--serif); font-size:1.28rem; font-weight:600; letter-spacing:.03em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.nav-list{display:none;}
+.nav-link{position:relative; display:block; white-space:nowrap; text-decoration:none; font-size:.72rem; letter-spacing:.11em; text-transform:uppercase; color:var(--soft); padding:8px 2px; transition:color .2s;}
+.nav-link::after{content:""; position:absolute; left:0; right:100%; bottom:2px; height:1px; background:var(--accent); transition:right .3s ease;}
+.nav-link:hover{color:var(--white);}
+.nav-link:hover::after,.nav-link.active::after{right:0;}
+.nav-link.active{color:var(--white);}
+.site-header .nav-cta{display:none;}
+.menu-btn{display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border:1px solid var(--line-2); border-radius:12px; background:transparent; color:var(--white); cursor:pointer; flex:none;}
+.menu-btn .bars{width:20px; height:14px; position:relative;}
+.menu-btn .bars i{position:absolute; left:0; width:100%; height:1.6px; background:currentColor; border-radius:2px; transition:transform .3s, opacity .2s, top .3s;}
+.menu-btn .bars i:nth-child(1){top:0;} .menu-btn .bars i:nth-child(2){top:6px;} .menu-btn .bars i:nth-child(3){top:12px;}
+.menu-btn[aria-expanded="true"] .bars i:nth-child(1){top:6px; transform:rotate(45deg);}
+.menu-btn[aria-expanded="true"] .bars i:nth-child(2){opacity:0;}
+.menu-btn[aria-expanded="true"] .bars i:nth-child(3){top:6px; transform:rotate(-45deg);}
+.drawer{position:fixed; top:var(--header-h); left:0; right:0; max-height:calc(100dvh - var(--header-h)); overflow-y:auto; background:rgba(0,0,0,.97); border-bottom:1px solid var(--line-2); padding:6px 20px 24px; visibility:hidden; opacity:0; transform:translateY(-10px); transition:opacity .28s ease, transform .28s ease, visibility 0s linear .28s; z-index:99;}
+.drawer.open{visibility:visible; opacity:1; transform:none; transition:opacity .28s ease, transform .28s ease, visibility 0s;}
+.drawer a.nav-link{padding:16px 2px; font-size:.86rem; border-bottom:1px solid var(--line); min-height:52px; display:flex; align-items:center;}
+.drawer a.nav-link::after{display:none;}
+.drawer a.nav-link.active{color:var(--accent);}
+.drawer .btn{margin-top:20px; width:100%;}
+.scrim{position:fixed; inset:var(--header-h) 0 0 0; background:rgba(0,0,0,.55); opacity:0; visibility:hidden; transition:opacity .28s, visibility 0s linear .28s; z-index:98;}
+.scrim.open{opacity:1; visibility:visible; transition:opacity .28s, visibility 0s;}
+
+/* ===== 4. Buttons ===== */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:15px 28px; min-height:50px; border-radius:999px; font:500 .76rem/1 var(--sans); letter-spacing:.15em; text-transform:uppercase; text-decoration:none; border:1px solid var(--white); cursor:pointer; transition:background .25s, color .25s, transform .25s, border-color .25s, box-shadow .25s; text-align:center;}
+.btn svg{width:16px; height:16px; flex:none; transition:transform .25s;}
+.btn:hover svg{transform:translateX(3px);}
+.btn:active{transform:scale(.98);}
+.btn-solid{background:var(--white); color:var(--black);}
+.btn-solid:hover{background:transparent; color:var(--white);}
+.btn-line{background:transparent; color:var(--white);}
+.btn-line:hover{background:var(--white); color:var(--black);}
+.btn-accent{background:var(--accent); border-color:var(--accent); color:#000; font-weight:600;}
+.btn-accent:hover{background:transparent; color:var(--accent); box-shadow:0 0 0 4px var(--accent-soft);}
+.btn-sm{padding:11px 20px; min-height:42px; font-size:.7rem; white-space:nowrap;}
+
+/* ===== 5. Hero ===== */
+.hero{position:relative; min-height:100svh; display:flex; align-items:center; text-align:center; padding:calc(var(--header-h) + 48px) 0 72px; overflow:hidden; isolation:isolate;}
+.hero::before{content:""; position:absolute; inset:-20% -10% auto; height:90%; background:radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 60%); z-index:-1;}
+.hero::after{content:""; position:absolute; left:50%; bottom:-30%; width:min(900px,140vw); aspect-ratio:1; transform:translateX(-50%); background:radial-gradient(circle, var(--accent-soft) 0%, rgba(0,0,0,0) 62%); z-index:-1;}
+.hero-logo{width:clamp(150px,38vw,240px); height:auto; aspect-ratio:1; margin:0 auto 30px; border-radius:clamp(26px,6vw,40px); box-shadow:0 0 0 1px rgba(255,255,255,.1), 0 30px 70px rgba(0,0,0,.7);}
+.label{display:inline-block; font-size:.7rem; letter-spacing:.32em; text-transform:uppercase; color:var(--mute); font-weight:400;}
+.label.accent{color:var(--accent);}
+.hero h1{font-size:clamp(2.7rem,10.5vw,6rem); margin-top:16px;}
+.tagline{font-family:var(--serif); font-style:italic; font-weight:500; font-size:clamp(1.3rem,4.2vw,2rem); color:var(--soft); margin-top:12px;}
+.tagline::before,.tagline::after{content:""; display:inline-block; width:28px; height:1px; background:var(--accent); vertical-align:middle; margin:0 14px;}
+.lead{max-width:640px; margin:26px auto 0; color:var(--soft); font-size:clamp(1rem,2.6vw,1.12rem);}
+.cta-row{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:38px;}
+.scroll-hint{position:absolute; left:50%; bottom:22px; transform:translateX(-50%); width:24px; height:38px; border:1px solid var(--line-2); border-radius:14px; display:none;}
+.scroll-hint::after{content:""; position:absolute; left:50%; top:8px; width:3px; height:7px; margin-left:-1.5px; border-radius:2px; background:var(--soft); animation:hint 1.8s ease-in-out infinite;}
+@keyframes hint{0%{opacity:0; transform:translateY(0);}30%{opacity:1;}100%{opacity:0; transform:translateY(12px);}}
+
+/* ===== 6. Sections ===== */
+.section{padding:clamp(72px,11vw,128px) 0; border-top:1px solid var(--line); position:relative;}
+.section.alt{background:var(--charcoal);}
+.sec-head{max-width:760px; margin-bottom:clamp(34px,6vw,60px);}
+.sec-head h2{font-size:clamp(2rem,6.4vw,3.6rem); margin-top:14px;}
+.sec-head .rule{width:56px; height:2px; background:var(--accent); margin-top:22px; border-radius:2px;}
+.prose p{color:var(--soft); font-size:1.04rem; margin-bottom:20px;}
+.prose p:last-child{margin-bottom:0;}
+.two-col{display:grid; gap:20px; grid-template-columns:1fr;}
+.pull{margin-top:clamp(36px,6vw,56px); max-width:780px; border-left:2px solid var(--accent); padding-left:22px; font-family:var(--serif); font-weight:500; font-size:clamp(1.35rem,4vw,2rem); line-height:1.4;}
+.pull cite{display:block; margin-top:10px; font-family:var(--sans); font-style:normal; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--mute);}
+
+/* cards */
+.cards{display:grid; gap:14px; grid-template-columns:1fr; margin-top:clamp(30px,5vw,50px);}
+.card{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:30px 26px; overflow:hidden; transition:transform .3s ease, border-color .3s, background .3s;}
+.card::before{content:""; position:absolute; inset:0 0 auto 0; height:2px; background:linear-gradient(90deg,var(--accent),transparent); opacity:0; transition:opacity .3s;}
+.card:hover{transform:translateY(-4px); border-color:var(--line-2); background:var(--surface-2);}
+.card:hover::before{opacity:1;}
+.ico{width:48px; height:48px; border-radius:14px; border:1px solid var(--line-2); display:flex; align-items:center; justify-content:center; color:var(--accent); background:var(--black); margin-bottom:20px;}
+.ico svg{width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;}
+.card h3{font-size:1.5rem; margin-bottom:10px;}
+.card p{color:var(--mute); font-size:.95rem; line-height:1.7;}
+.card .tag{display:inline-block; margin-top:14px; font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent);}
+
+/* ===== 7. Filtbo ===== */
+.filtbo{background:linear-gradient(180deg,#0b0b0b,#000); }
+.filtbo-grid{display:grid; gap:44px; grid-template-columns:1fr; align-items:center;}
+.feat{display:grid; gap:12px; grid-template-columns:1fr; margin:28px 0 34px;}
+.feat li{display:flex; gap:12px; align-items:flex-start; color:var(--soft); font-size:.98rem;}
+.feat svg{width:20px; height:20px; flex:none; margin-top:3px; fill:none; stroke:var(--accent); stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+.showcase{position:relative; border:1px solid var(--line-2); border-radius:28px; padding:clamp(30px,6vw,52px); text-align:center; background:radial-gradient(ellipse at 50% 0%, #1b1b1b, #0a0a0a 70%); overflow:hidden;}
+.showcase::after{content:""; position:absolute; inset:auto -20% -40% -20%; height:70%; background:radial-gradient(ellipse at center, var(--accent-soft), transparent 65%); pointer-events:none;}
+.showcase img{width:clamp(110px,26vw,150px); height:auto; aspect-ratio:1; margin:0 auto 22px; border-radius:30px; position:relative; z-index:1;}
+.showcase .mark{font-family:var(--serif); font-size:clamp(1.9rem,6vw,2.6rem); letter-spacing:.2em; position:relative; z-index:1;}
+.showcase .mark span{color:var(--accent);}
+.showcase small{display:block; margin-top:8px; font-size:.68rem; letter-spacing:.24em; text-transform:uppercase; color:var(--mute); position:relative; z-index:1;}
+.chips{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:24px; position:relative; z-index:1;}
+.chips span{border:1px solid var(--line-2); border-radius:999px; padding:6px 13px; font-size:.7rem; color:var(--soft); letter-spacing:.06em; background:rgba(0,0,0,.4);}
+
+
+/* ===== Support & Requests ===== */
+.support-grid{display:grid; gap:18px; grid-template-columns:1fr; margin-top:40px;}
+.support-grid .card{display:flex; flex-direction:column; align-items:flex-start;}
+.support-grid .card .btn{margin-top:22px;}
+@media (min-width:760px){ .support-grid{grid-template-columns:1fr 1fr;} }
+
+/* ===== 8. Values ===== */
+.value .num{font-family:var(--serif); font-size:2.6rem; color:var(--accent); line-height:1; opacity:.9;}
+.value h3{margin:14px 0 10px;}
+
+/* ===== 9. Social ===== */
+.social-grid{display:grid; gap:14px; grid-template-columns:1fr;}
+.soc{position:relative; display:flex; align-items:center; gap:16px; padding:20px 22px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); text-decoration:none; min-height:84px; transition:transform .3s, border-color .3s, background .3s;}
+.soc:hover{transform:translateY(-3px); border-color:var(--accent); background:var(--surface-2);}
+.soc .ico{margin:0; flex:none;}
+.soc .txt{min-width:0; flex:1;}
+.soc b{display:block; font-family:var(--serif); font-size:1.4rem; font-weight:600; line-height:1.2;}
+.soc small{display:block; color:var(--mute); font-size:.8rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.soc .go{width:20px; height:20px; flex:none; color:var(--mute); transition:color .25s, transform .25s; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+.soc:hover .go{color:var(--accent); transform:translate(3px,-3px);}
+
+/* ===== 10. Contact ===== */
+.contact-card{border:1px solid var(--line-2); border-radius:28px; padding:clamp(30px,6vw,60px) clamp(22px,5vw,50px); text-align:center; background:radial-gradient(ellipse at 50% 0%, #1a1a1a, #0b0b0b 70%);}
+.contact-card .ico{margin:0 auto 22px; width:56px; height:56px; border-radius:16px;}
+.contact-card h3{font-size:clamp(1.6rem,5vw,2.3rem);}
+.contact-card p{color:var(--soft); max-width:520px; margin:14px auto 0;}
+.mail{display:inline-block; margin-top:26px; font-family:var(--serif); font-size:clamp(1.2rem,5.6vw,2.2rem); font-weight:600; text-decoration:none; border-bottom:1px solid var(--accent); padding-bottom:4px; word-break:break-all; transition:color .25s;}
+.mail:hover{color:var(--accent);}
+.contact-card .cta-row{margin-top:28px;}
+.copied{min-height:1.4em; margin-top:12px; font-size:.82rem; color:var(--accent);}
+
+/* ===== 11. Footer ===== */
+.site-footer{border-top:1px solid var(--line); background:#000; padding:60px 0 calc(34px + env(safe-area-inset-bottom));}
+.foot-grid{display:grid; gap:36px; grid-template-columns:1fr;}
+.foot-brand img{width:56px; height:56px; border-radius:14px; margin-bottom:14px;}
+.foot-brand p{color:var(--mute); font-size:.92rem; max-width:340px;}
+.foot-brand .tg{font-family:var(--serif); font-style:italic; font-size:1.3rem; color:var(--soft); margin-bottom:8px;}
+.foot-col h4{font-family:var(--sans); font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--mute); margin-bottom:14px; font-weight:500;}
+.foot-col a{display:block; text-decoration:none; color:var(--soft); font-size:.93rem; padding:6px 0; transition:color .2s;}
+.foot-col a:hover{color:var(--accent);}
+.foot-base{margin-top:44px; padding-top:24px; border-top:1px solid var(--line); display:flex; flex-direction:column; gap:8px; color:var(--mute); font-size:.82rem;}
+
+/* ===== 12. Scroll to top ===== */
+.to-top{position:fixed; right:max(16px, env(safe-area-inset-right)); bottom:max(16px, env(safe-area-inset-bottom)); width:48px; height:48px; border-radius:50%; border:1px solid var(--line-2); background:rgba(0,0,0,.85); color:var(--white); display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; visibility:hidden; transform:translateY(10px); transition:opacity .3s, transform .3s, visibility 0s linear .3s, border-color .25s, color .25s; z-index:90; -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);}
+.to-top.show{opacity:1; visibility:visible; transform:none; transition:opacity .3s, transform .3s, visibility 0s, border-color .25s, color .25s;}
+.to-top:hover{border-color:var(--accent); color:var(--accent);}
+.to-top svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+
+/* ===== 13. Reveal ===== */
+.reveal{opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease;}
+.reveal.in{opacity:1; transform:none;}
+.no-js .reveal{opacity:1; transform:none;}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation:none !important; transition-duration:.01ms !important;}
+  .reveal{opacity:1; transform:none;}
+}
+
+/* ===== 14. Breakpoints (mobile first) ===== */
+@media (min-width:600px){
+  .cards{grid-template-columns:repeat(2,1fr);}
+  .social-grid{grid-template-columns:repeat(2,1fr);}
+  .feat{grid-template-columns:repeat(2,1fr);}
+  .two-col{grid-template-columns:1fr 1fr; gap:48px;}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr;}
+  .foot-base{flex-direction:row; justify-content:space-between;}
+  .scroll-hint{display:block;}
+}
+@media (min-width:1180px){
+  .nav-list{display:flex; gap:clamp(14px,1.6vw,26px); align-items:center;}
+  .site-header .nav-cta{display:inline-flex;}
+  .menu-btn,.drawer,.scrim{display:none;}
+  .brand span{overflow:visible;}
+}
+@media (min-width:1024px){
+  .cards.three{grid-template-columns:repeat(3,1fr);}
+  .social-grid{grid-template-columns:repeat(3,1fr);}
+  .filtbo-grid{grid-template-columns:1.1fr .9fr; gap:72px;}
+  .foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;}
+}
+@media (max-width:359px){
+  .brand span{font-size:1.1rem;}
+  .btn{padding:14px 20px; letter-spacing:.1em;}
+  .cta-row .btn{width:100%;}
+}
+@media (min-width:1700px){ :root{--maxw:1280px;} body{font-size:1.06rem;} }
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Gospel Animation, back to top">
+      <img src="data:image/webp;base64,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" alt="Gospel Animation logo" width="38" height="38">
+      <span>Gospel Animation</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#vision">Vision</a></li>
+        <li><a class="nav-link" href="#what-we-do">What We Do</a></li>
+        <li><a class="nav-link" href="#values">Our Values</a></li>
+        <li><a class="nav-link" href="#filtbo">Filtbo App</a></li>
+        <li><a class="nav-link" href="#follow">Follow Us</a></li>
+        <li><a class="nav-link" href="#support">Support</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-accent btn-sm nav-cta" href="https://filtbo.com" target="_blank" rel="noopener noreferrer">Open Filtbo</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="drawer" id="drawer" aria-label="Mobile navigation">
+  <a class="nav-link" href="#home">Home</a>
+  <a class="nav-link" href="#about">About</a>
+  <a class="nav-link" href="#vision">Vision</a>
+  <a class="nav-link" href="#what-we-do">What We Do</a>
+  <a class="nav-link" href="#values">Our Values</a>
+  <a class="nav-link" href="#filtbo">Filtbo App</a>
+  <a class="nav-link" href="#follow">Follow Us</a>
+  <a class="nav-link" href="#support">Support</a>
+  <a class="nav-link" href="#contact">Contact</a>
+  <a class="btn btn-accent" href="https://filtbo.com" target="_blank" rel="noopener noreferrer">Open Filtbo</a>
+</nav>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section class="hero" id="home" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <img class="hero-logo" src="data:image/webp;base64,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" alt="Gospel Animation anchor logo" width="240" height="240" fetchpriority="high">
+      <span class="label accent">Christian Animation Ministry</span>
+      <h1 id="heroTitle">Gospel Animation</h1>
+      <p class="tagline">Beyond Imagination</p>
+      <p class="lead">We bring Scripture, faith and hope to life through animation, storytelling and music, so that the Word of God can be seen, felt and remembered.</p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="https://youtube.com/@gospelanimationofficial?si=cWr43if-p8VCCxAf" target="_blank" rel="noopener noreferrer">Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#filtbo">Explore Filtbo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <span class="scroll-hint" aria-hidden="true"></span>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section alt" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label accent">About Us</span>
+        <h2 id="aboutTitle">Telling the greatest story in a way everyone can see</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="two-col prose reveal">
+        <div>
+          <p>Gospel Animation is a Christian animation ministry from Nigeria. We create animated stories, devotional content and music that bring the message of the Bible to life for people of every age, in language and pictures that are simple to understand and beautiful to watch. Our work begins with Scripture and ends with a single hope: that someone who watches will feel closer to God.</p>
+          <p>We believe that a story well told can open a heart that a sermon alone might not reach. Animation lets us show the courage of David, the patience of Noah and the compassion of Jesus in a way children can follow and adults can still be moved by. Every frame we make is shaped by prayer, careful study of the Word and a commitment to honour the text we are retelling.</p>
+        </div>
+        <div>
+          <p>Gospel Animation is also the team behind Filtbo, a free Bible app that lets people read, search, listen to and study the Bible on their phones. Filtbo grew out of the same desire that drives our animations: to make Scripture easy to reach and a joy to return to every day, wherever a person lives and whatever device they own.</p>
+          <p>We are a young and growing ministry, and we are grateful for every person who watches, shares and prays with us. We publish across YouTube, TikTok, Instagram, Facebook, X, Spotify and a WhatsApp channel, because we want to meet people where they already spend their time and offer them something that lifts the heart instead of draining it.</p>
+        </div>
+      </div>
+      <blockquote class="pull reveal" style="margin-left:0;margin-right:0;">&ldquo;Your word is a lamp to my feet and a light to my path.&rdquo;<cite>Psalm 119:105</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="section" id="vision" aria-labelledby="visionTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label accent">Our Vision</span>
+        <h2 id="visionTitle">A world that meets the Word through every screen</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="prose reveal" style="max-width:780px;">
+        <p>Our vision is to become a trusted home for faith-filled animation across Africa and around the world. We see a generation that grows up with Bible stories that look as exciting as the cartoons and films it already loves, and with Christian content that is made with the same skill, care and imagination as anything else on its screen. We want parents to feel safe handing a phone to their child, and we want teenagers to find something that speaks to them without talking down to them.</p>
+        <p>We also see a future where nobody is too far, too busy or too poor to hear the Gospel. That is why we build things that are free to watch, easy to share and light enough to work on ordinary phones and ordinary data plans. We want to use creativity and technology as tools of service, so that a person in a small town can open an app, hear a Bible story, and know that God sees them.</p>
+        <p>Finally, our vision is about quality and character. We want Gospel Animation to be known for excellence in craft and honesty in message: work that is beautiful, faithful to Scripture, and respectful of every viewer. We do not chase noise. We want to build slowly, pray often, and leave behind work that still encourages people many years from now.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section alt" id="what-we-do" aria-labelledby="doTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label accent">What We Offer</span>
+        <h2 id="doTitle">Faith, told with imagination</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="two-col prose reveal">
+        <p>Everything we make is built around one purpose: to help people encounter the Word of God in a fresh and memorable way. Some of our work is for quiet moments, such as a short devotional or a song for prayer. Some is for families to watch together, and some is a tool you keep on your phone and open every morning.</p>
+        <p>Whatever the format, we aim for the same standard of beauty, clarity and reverence. Our content is free to enjoy, and we welcome people of every denomination and background who love the Bible. Here is a look at what we offer today and what we are building toward.</p>
+      </div>
+      <div class="cards three">
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg></div><h3>Animated Bible Stories</h3><p>Scripture retold through carefully crafted animation, made to be understood by children and appreciated by adults.</p></article>
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5z"/><path d="M12 6.5V19.5"/></svg></div><h3>Devotional Content</h3><p>Short videos and reflections for encouragement, prayer and daily hope, easy to watch in a few minutes.</p></article>
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></svg></div><h3>The Filtbo Bible App</h3><p>A free Bible app to read, search, listen to and study the Word, with reading plans and reminders.</p><a class="tag" href="#filtbo">Learn more</a></article>
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></div><h3>Music &amp; Worship</h3><p>Songs and playlists to accompany prayer, study and reflection, shared on Spotify.</p></article>
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.1 4.5 2.2 4.5 4.8"/></svg></div><h3>Community</h3><p>A growing community on WhatsApp and social media where updates, encouragement and new releases are shared.</p></article>
+        <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><h3>Custom Projects</h3><p>Animation and creative work for churches, ministries and events. Write to us to talk about your idea.</p><a class="tag" href="#contact">Get in touch</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section" id="values" aria-labelledby="valuesTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label accent">What We Stand For</span>
+        <h2 id="valuesTitle">The anchor beneath everything we make</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="prose reveal" style="max-width:780px;">
+        <p>Our logo is an anchor, and it is chosen on purpose. Scripture calls hope &ldquo;an anchor for the soul, firm and secure&rdquo;, and we want our work to be a steady place for people to stand in a noisy and uncertain world. These values guide every project we begin and every decision we make as a team.</p>
+      </div>
+      <div class="cards three">
+        <article class="card value reveal"><span class="num">I</span><h3>Faithful to Scripture</h3><p>We stay close to the Bible and tell its stories with honesty and reverence.</p></article>
+        <article class="card value reveal"><span class="num">II</span><h3>Excellence</h3><p>We give our best craft to every frame, because the message deserves it.</p></article>
+        <article class="card value reveal"><span class="num">III</span><h3>Family-Friendly</h3><p>Our content is safe, respectful and welcoming for every age.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTBO -->
+  <section class="section filtbo" id="filtbo" aria-labelledby="filtboTitle">
+    <div class="wrap">
+      <div class="filtbo-grid">
+        <div class="reveal">
+          <span class="label accent">Our App</span>
+          <h2 id="filtboTitle" style="font-size:clamp(2rem,6.4vw,3.6rem);margin-top:14px;">Filtbo, the Bible in your pocket</h2>
+          <div class="sec-head" style="margin:22px 0 0;"><div class="rule" style="margin:0;"></div></div>
+          <div class="prose" style="margin-top:28px;">
+            <p>Filtbo is our free Bible app, built so that reading the Word can become a daily habit instead of a good intention. It brings the Bible, a study companion and gentle daily reminders together in one simple app that you can install straight from your browser.</p>
+          </div>
+          <ul class="feat">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Bible reading in several translations</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Audio Bible you can listen to</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Bible search by verse or topic</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Reading plans with daily reminders</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Verse images to share</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Filtbo AI to help you study</li>
+          </ul>
+          <div class="cta-row" style="justify-content:flex-start;">
+            <a class="btn btn-accent" href="https://filtbo.com" target="_blank" rel="noopener noreferrer">Open Filtbo</a>
+            <a class="btn btn-line" href="https://filtbo.com/about.html" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="showcase">
+            <img src="data:image/webp;base64,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" alt="Filtbo logo" width="150" height="150" loading="lazy">
+            <div class="mark">FILT<span>BO</span></div>
+            <small>By Gospel Animation</small>
+            <div class="chips"><span>Read</span><span>Listen</span><span>Search</span><span>Plan</span><span>Share</span><span>Ask AI</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLLOW -->
+  <section class="section alt" id="follow" aria-labelledby="followTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label accent">Follow Us</span>
+        <h2 id="followTitle">Join the community</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="social-grid">
+        <a class="soc reveal" href="https://youtube.com/@gospelanimationofficial?si=cWr43if-p8VCCxAf" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on YouTube">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></span>
+          <span class="txt"><b>YouTube</b><small>@GospelAnimationOfficial</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://www.instagram.com/gospelanimation.official" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on Instagram">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6" fill="currentColor"/></svg></span>
+          <span class="txt"><b>Instagram</b><small>@gospelanimation.official</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://www.tiktok.com/@gospelanimationofficial?_r=1&amp;_t=ZS-99petw9eaJR" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on TikTok">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.2a3.7 3.7 0 1 1-3.7-3.7"/><path d="M14 4c.3 2.3 1.8 3.8 4.2 4"/></svg></span>
+          <span class="txt"><b>TikTok</b><small>@gospelanimationofficial</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://www.facebook.com/share/1CZfBeW4cV/" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on Facebook">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 20v-7h2.4l.5-3h-2.9V8.4c0-.9.4-1.5 1.6-1.5h1.4V4.2c-.3 0-1.2-.2-2.3-.2-2.4 0-3.9 1.4-3.9 4v2H9v3h2.3v7"/></svg></span>
+          <span class="txt"><b>Facebook</b><small>Gospel Animation</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://x.com/GospelAMt" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on X">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
+          <span class="txt"><b>X</b><small>@GospelAMt</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://open.spotify.com/user/31ep27gzz6kzv4oyo7o4xinmfhni?si=MTQVK5SKSum7vQZYnm5lNQ&amp;utm_source=copy-link" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation on Spotify">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M7.8 10c3-1 6.2-.7 8.6.9M8.3 12.9c2.4-.7 4.8-.4 6.8.8M8.8 15.6c1.8-.5 3.5-.3 5 .5"/></svg></span>
+          <span class="txt"><b>Spotify</b><small>Gospel Animation playlists</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="soc reveal" href="https://whatsapp.com/channel/0029VbDNbVg7oQhZmodLcP3q" target="_blank" rel="noopener noreferrer" aria-label="Gospel Animation WhatsApp channel">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-4A8 8 0 1 1 8 18.8z"/><path d="M9.2 8.8c.3 2.6 2.4 4.9 5.2 5.9l1.1-1.4-1.9-1-.8.6c-.9-.4-1.7-1.200-2.100-2.100l.6-.8-1-1.900z"/></svg></span>
+          <span class="txt"><b>WhatsApp Channel</b><small>Updates and encouragement</small></span>
+          <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section class="section" id="support" aria-labelledby="supportTitle">
+    <div class="wrap">
+      <span class="label accent">Get Involved</span>
+      <h2 id="supportTitle" style="font-size:clamp(2rem,6.4vw,3.6rem);margin-top:14px;">Partner with the ministry</h2>
+      <p style="color:var(--soft);max-width:640px;margin-top:16px;">Every animation takes time, prayer and resources to make. You can help us reach more people, or ask us to create something for your church or ministry.</p>
+      <div class="support-grid">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div>
+          <h3>Support the Ministry</h3>
+          <p>Your giving helps us produce more animations, keep our Bible app free and share the Gospel with people everywhere. Give any amount you feel led to, securely online through Paystack, and know that it is received with gratitude.</p>
+          <a class="btn btn-accent" href="https://paystack.shop/pay/support-gospel-animation" target="_blank" rel="noopener noreferrer">Support the Ministry</a>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg></div>
+          <h3>Request an Animation</h3>
+          <p>Need a Bible story, a sermon highlight or a short Gospel animation for your church, school or event? Tell us what you have in mind, the message, the length and the date you need it.</p>
+          <a class="btn btn-solid" href="mailto:filtbooffcial@gmail.com?subject=Animation%20Request&amp;body=Hello%20Gospel%20Animation%2C%0A%0AName%3A%0AChurch%20or%20ministry%3A%0AWhat%20I%20need%3A%0ALength%3A%0ADate%20needed%3A">Request an Animation</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></div>
+        <span class="label accent">Contact</span>
+        <h3 id="contactTitle" style="margin-top:12px;">Let&rsquo;s create something together</h3>
+        <p>Whether you have a question, a suggestion, a ministry project in mind, or you simply want to say hello, we would love to hear from you.</p>
+        <a class="mail" href="mailto:filtbooffcial@gmail.com">filtbooffcial@gmail.com</a>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="mailto:filtbooffcial@gmail.com?subject=Hello%20Gospel%20Animation">Send an Email</a>
+          <button class="btn btn-line" type="button" id="copyMail">Copy Email</button>
+        </div>
+        <p class="copied" id="copied" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="data:image/webp;base64,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" alt="Gospel Animation logo" width="56" height="56" loading="lazy">
+        <p class="tg">Beyond Imagination</p>
+        <p>Gospel Animation is a Christian animation ministry from Nigeria, and the team behind the Filtbo Bible App.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#about">About</a><a href="#vision">Vision</a><a href="#what-we-do">What We Do</a><a href="#values">Our Values</a><a href="#follow">Follow Us</a><a href="#contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Filtbo</h4>
+        <a href="https://filtbo.com" target="_blank" rel="noopener noreferrer">Open Filtbo</a>
+        <a href="https://filtbo.com/about.html" target="_blank" rel="noopener noreferrer">About Filtbo</a>
+        <a href="https://filtbo.com/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="https://filtbo.com/terms.html" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+      </div>
+      <div class="foot-col">
+        <h4>Social</h4>
+        <a href="https://youtube.com/@gospelanimationofficial?si=cWr43if-p8VCCxAf" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.instagram.com/gospelanimation.official" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@gospelanimationofficial?_r=1&amp;_t=ZS-99petw9eaJR" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.facebook.com/share/1CZfBeW4cV/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://x.com/GospelAMt" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://open.spotify.com/user/31ep27gzz6kzv4oyo7o4xinmfhni?si=MTQVK5SKSum7vQZYnm5lNQ&amp;utm_source=copy-link" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a href="https://whatsapp.com/channel/0029VbDNbVg7oQhZmodLcP3q" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>&copy; <span id="yr">2026</span> Gospel Animation. All rights reserved.</span>
+      <span>Produced and protected by Gospel Animation</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  'use strict';
+  var d = document, root = d.documentElement;
+  d.body.classList.remove('no-js');
+  var $ = function(s, c){ return (c||d).querySelector(s); };
+  var $$ = function(s, c){ return Array.prototype.slice.call((c||d).querySelectorAll(s)); };
+
+  /* hide any image that fails to load, never show a broken icon */
+  $$('img').forEach(function(img){ img.addEventListener('error', function(){ img.style.visibility = 'hidden'; }); });
+
+  /* footer year */
+  var yr = $('#yr'); if(yr) yr.textContent = new Date().getFullYear();
+
+  /* header style on scroll + back to top */
+  var header = $('#siteHeader'), toTop = $('#toTop');
+  function onScroll(){
+    var y = window.pageYOffset || root.scrollTop;
+    if(header) header.classList.toggle('scrolled', y > 24);
+    if(toTop) toTop.classList.toggle('show', y > 700);
+    setActive();
+  }
+
+  /* mobile menu */
+  var btn = $('#menuBtn'), drawer = $('#drawer'), scrim = $('#scrim');
+  function setMenu(open){
+    if(!btn || !drawer) return;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    drawer.classList.toggle('open', open);
+    if(scrim) scrim.classList.toggle('open', open);
+  }
+  if(btn){
+    btn.addEventListener('click', function(e){ e.stopPropagation(); setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+    d.addEventListener('click', function(e){
+      if(btn.getAttribute('aria-expanded') !== 'true') return;
+      if(!drawer.contains(e.target) && !btn.contains(e.target)) setMenu(false);
+    });
+    d.addEventListener('keydown', function(e){ if(e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true'){ setMenu(false); btn.focus(); } });
+    $$('a', drawer).forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+    window.addEventListener('resize', function(){ if(window.innerWidth >= 1180) setMenu(false); });
+  }
+
+  /* active section highlighting */
+  var links = $$('.nav-link'), sections = ['home','about','vision','what-we-do','values','filtbo','follow','support','contact'].map(function(id){ return d.getElementById(id); }).filter(Boolean);
+  var current = '';
+  function setActive(){
+    var pos = (window.pageYOffset || root.scrollTop) + 140, id = sections[0] ? sections[0].id : '';
+    for(var i = 0; i < sections.length; i++){ if(sections[i].offsetTop <= pos) id = sections[i].id; }
+    if((window.innerHeight + (window.pageYOffset || root.scrollTop)) >= d.body.scrollHeight - 4 && sections.length) id = sections[sections.length-1].id;
+    if(id === current) return; current = id;
+    links.forEach(function(a){
+      var on = a.getAttribute('href') === '#' + id;
+      a.classList.toggle('active', on);
+      if(on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(function(){ onScroll(); ticking = false; }); } }, {passive:true});
+  window.addEventListener('resize', setActive);
+
+  /* back to top */
+  if(toTop) toTop.addEventListener('click', function(){
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+  });
+
+  /* copy email */
+  var copy = $('#copyMail'), note = $('#copied');
+  if(copy) copy.addEventListener('click', function(){
+    var mail = 'filtbooffcial@gmail.com';
+    function done(msg){ if(note){ note.textContent = msg; setTimeout(function(){ note.textContent = ''; }, 2600); } }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(mail).then(function(){ done('Email address copied.'); }, function(){ done(mail); });
+    } else { done(mail); }
+  });
+
+  /* reveal on scroll */
+  var items = $$('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); }, {threshold:.1, rootMargin:'0px 0px -6% 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('in'); }); }
+
+  onScroll();
+})();
+</script>
+</body>
+</html>
